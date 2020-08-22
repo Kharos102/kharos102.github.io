@@ -19,7 +19,7 @@ Next I step out and set a breakpoint on all the vtable function pointers for the
 
 ![Debugging FoxitReader](/assets/FoxitFuzz/vtable_analysis.png)
 
-We know how to view the vtable as teh pointer to the vtable is the first 4-bytes (32bit) when dumping the object.
+We know how to view the vtable as the pointer to the vtable is the first 4-bytes (32bit) when dumping the object.
 
 During this process we can notice multiple differences compared to the older versions of FoxitReader, including changes to existing function prototypes and the introduction of new vtable functions that require to be called.
 
@@ -37,7 +37,7 @@ Finally after the conversion the object is released and the buffer is freed.
 
 After noting all the above we can make a hrness from the information discovered and give it a test.
 
-Issues arose shortly afterward, including exceptions in FoxitReader.exe that I loaded into memory, this was due to import table addresses not being resolved, this was fixed by manually patching the import table of the loaded FOxitReader binary.
+Issues arose shortly afterward, including exceptions in FoxitReader.exe that I loaded into memory, this was due to import table addresses not being resolved, this was fixed by manually patching the import table of the loaded FoxitReader binary.
 
 Additionall, calls to HeapAlloc were occurring where the heap handle was obtained via an offset into the FoxitReader binary, this was fixed by writing the current process heap handle into the loaded FoxitReader image.
 
