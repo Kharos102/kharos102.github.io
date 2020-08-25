@@ -114,7 +114,7 @@ There are other techniques too (e.g. leveraging RPC) that may also be applicable
 
 ### Attacking EDRs
 
-EDR's weaknesses also include their design that make them susceptable to subversion.
+EDR weaknesses also include their design that make them susceptable to subversion.
 
 For example, as shown above, userland hooking may be key to an EDR's detection capabilities (such that without it, the product may be rendered useless).
 
