@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fuzzing tooling to handle FileReads"
+title:  "Using Hooks for Harnessing"
 date:   2020-10-13 16:00:17 +1000
 ---
 One problem I've encountered during fuzzing is how to best fuzz an application that performs multiple read operations on an input file. For example, say an application takes in an input file path from a user and parses it, if the application loads
