@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "christopher-vella.com",
-  "Id": "af491da9-49a9-42ec-8859-5ff65a1ccfb0"
-}
