@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Just a blog to talk about reversing & fuzzing stuff.
+Personal blog about fuzzing & RE.
